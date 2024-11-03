@@ -1,5 +1,8 @@
 from shiny import App, ui
 
+#Screenshot URL
+src = "https://raw.githubusercontent.com/rsm-apamplona/Group3_HousingProject/refs/heads/main/Shiny%20Code/Screenshot%202024-11-01%20145938.png?token=GHSAT0AAAAAACYJ6MBJGSSPQTKTXDRB62GAZZHQ67Q"
+
 # Define the UI
 app_ui = ui.page_fluid(
     ui.h2("Group 3 Shiny Document Overview"),
@@ -18,7 +21,15 @@ app_ui = ui.page_fluid(
     ui.h3("Limitations"),
     ui.p("""The group attempted to scrape live Refin listings to gather price, 
 	address, and square footage using Beautifulsoup but was blocked by 
-	Refin.""")
+	Refin."""),
+    ui.card(
+        ui.card_header("RedFin Rejection Screenshot"),
+        ui.img(
+            src=src,
+            alt="RedFin Rejection Screenshot",
+            width="600px"
+        )
+    )
     # ui.button("This is a button."),
     # ui.text_input("This is a text input."),
     # ui.checkbox("This is a checkbox."),

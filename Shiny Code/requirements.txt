@@ -1,0 +1,5 @@
+numpy
+numpy_financial
+matplotlib
+folium
+markdown
